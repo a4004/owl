@@ -12,7 +12,7 @@ Owl OSS - Source Tree
 ```
 
 ## Get Started
-1. Clone a4004/owl to your local git instance. `$ git clone https://github.com/a4004/owl.git`
+1. Clone `a4004/owl` to your local git instance. `$ git clone https://github.com/a4004/owl.git`
 2. Install Node.js dependencies. `owl/src/$ npm install`
 3. Modify related configuration files. **Please note you will need to create your own Discord application on the [developer](https://discord.com/developers/) portal in order to obtain your own application token and client ID.**.
 4. Start Owl. `ow/src/$ node .`
