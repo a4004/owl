@@ -9,6 +9,17 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 ```
 Owl OSS - Source Tree
 =====================
+- src 📁
+      - cfg 📁
+          - appcfg.json ⚙️
+          - runcfg.json ⚙️
+      - lib 📁
+          - libcordapi.js 📦️
+          - libowl.js 📦️
+          - libsock.js 📦️
+      - plugins 📁
+          - twttr-relay.js 🧩
+      - index.js 💾
 ```
 
 ## Get Started 🌀
