@@ -3,6 +3,8 @@
 const libowl = require('./lib/libowl');
 const discord = require('./lib/libcordapi');
 
+const twitterRelay = require('./plugins/twttr-relay');
+
 function onUncaughtException(error) {
     libowl.log('module'.red, `*** Unhandled exception captured: ${error} ***`, console.warn);
 }
@@ -23,7 +25,7 @@ global.discordClient.once('ready', () => {
 });
 
 function initModules() {
-    
+    twitterRelay.init();
 }
 
 function init() {

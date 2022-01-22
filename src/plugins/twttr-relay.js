@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 
 function init() {
     libowl.condlog('twttr'.green, 'Init started.');
-
+    const app = express();
+    
     libowl.condlog('twttr'.green, 'Express: bodyParser use JSON');
     app.use(bodyParser.json());
     libowl.condlog('twttr'.green, 'Express: bodyParser use URL encoding (Extended)');
@@ -25,9 +26,9 @@ function init() {
         if (req.headers.authorization === libowl.appcfg.plugins.twitter.apikey) {
             libowl.log('twttr'.green, 'Received authorized API request from'.bgGreen + ' ' + `${req.socket.remoteAddress}`.bgBlack.green, console.log);
             let embed = new discord.MessageEmbed()
-                .setColor(libowl.colors.COLOR_YES)
+                .setColor('#ffffff')
                 .setTitle('Owl OSS')
-                .setDescription(`${tweet.content}\n\n${tweet.url}`);
+                .setDescription(`${req.body.content}\n\n${req.body.url}`);
             libowl.condlog('twttr'.green, 'Broadcasting Received Tweet'.bgWhite.black);
             libowl.runcfg.plugins.twitter.guilds.forEach(guild => {
                 let server = global.discordClient.guilds.cache.get(guild.gid);
@@ -38,10 +39,16 @@ function init() {
             res.status(200);
             res.json( { status: 200, message: 'OK' } );
         } else {
-            libowl.log('twttr'.yellow, 'Received unauthorized API request from'.bgYellow + ' ' + `${req.socket.remoteAddress}`.bgBlack.yellow, console.log);
+            libowl.log('twttr'.yellow, 'Received unauthorized API request from'.bgBlack + ' ' + `${req.socket.remoteAddress}`.bgBlack.yellow, console.log);
             res.status(401);
             res.json( { status: 401, message: 'Unauthorized' } );
         }
+    });
+
+    libowl.condlog('twttr'.green, 'Setting up listener service on port 3000.');
+
+    app.listen(3000, () => {
+        libowl.log('twttr'.green, 'Twitter relay service operational on port 3000.'.bgBlue, console.info);
     });
 }
 

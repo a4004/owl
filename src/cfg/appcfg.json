@@ -1,0 +1,10 @@
+{
+    "botToken": "",
+    "botClientId": "",
+    "logger": {
+        "verbose": true
+    },
+    "plugins": {
+        "twitter": { "apikey": "abcdef123456" }
+    }
+}

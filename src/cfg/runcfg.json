@@ -1,0 +1,9 @@
+{
+    "plugins": {
+        "twitter": {
+            "guilds": [
+                { "gid": "" , "cid": "" }
+            ]
+        }
+    }
+}
