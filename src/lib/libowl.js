@@ -1,6 +1,6 @@
 const appcfg = require(process.argv.at(0));
 const runcfg = require(process.argv.at(1));
-const fs = require('fs');
+const fs = require('fs'); require('colors');
 
 function log(module, message, logfunc) {
     logfunc(`[  ${process.uptime().toFixed(3)}]`.cyan + `  ${module}:` + `\t${message}`);
