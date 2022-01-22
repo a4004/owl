@@ -1,0 +1,26 @@
+{
+  "name": "owl-oss",
+  "version": "0.1.1",
+  "description": "\"Free and open-source all-in-one Discord management solution with extensive plugin support.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a4004/owl.git"
+  },
+  "author": "a4004",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/a4004/owl/issues"
+  },
+  "homepage": "https://github.com/a4004/owl#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "discord.js": "^13.6.0",
+    "express": "^4.17.2",
+    "ws": "^8.4.2"
+  }
+}
