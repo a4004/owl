@@ -14,7 +14,7 @@ module.exports = {
         return new Date().toISOString();
     },
     condlog: function (module, message) {
-        if (applicationCfg.additionalCfg.verbose) log(module, message, console.log);
+        if (appcfg.logger.verbose) log(module, message, console.log);
     },
     log: log,
     backupRunCfg: function() {
