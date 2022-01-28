@@ -1,4 +1,4 @@
-const debug_mode      = true;
+const debug_mode      = false;
 const color_interact  = '#00ffaa';
 const color_secondary = '#00aaff';
 const color_win       = '#eeee00';
