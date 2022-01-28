@@ -2,7 +2,30 @@
     "plugins": {
         "twitter": {
             "guilds": [
-                { "gid": "" , "cid": "" }
+                {
+                    "gid": "",
+                    "cid": ""
+                }
+            ]
+        },
+        "noon": {
+            "guilds": [
+                {
+                    "gid": "",
+                    "bucket": {
+                        "server_timeout": false,
+                        "dispute_lock": false,
+                        "last_winner": "",
+                        "users": [
+                            {
+                                "uid": "",
+                                "cooldown": 0,
+                                "balance": 0,
+                                "history": []
+                            }
+                        ]
+                    }
+                }
             ]
         }
     }

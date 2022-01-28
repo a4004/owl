@@ -4,6 +4,8 @@ const libowl = require('./lib/libowl');
 const discord = require('./lib/libcordapi');
 
 const twitterRelay = require('./plugins/twttr-relay');
+const noonGame = require('./plugins/noon');
+const libtime = require('./lib/libtime');
 
 function onUncaughtException(error) {
     libowl.log('module'.red, `*** Unhandled exception captured: ${error} ***`, console.warn);
@@ -26,10 +28,14 @@ global.discordClient.once('ready', () => {
 
 function initModules() {
     twitterRelay.init();
+    noonGame.init();
 }
 
 function init() {
     libowl.condlog('main'.green, 'Init started.');
+    libowl.condlog('time'.cyan, 'Testing time.');
+    libtime.getLondonTimeNow();
+
     libowl.condlog('main'.cyan, 'Connecting to Discord');
 
     global.discordClient.login(libowl.appcfg.botToken).then(() => {

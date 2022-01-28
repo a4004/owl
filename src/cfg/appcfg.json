@@ -5,6 +5,7 @@
         "verbose": true
     },
     "plugins": {
-        "twitter": { "apikey": "abcdef123456" }
+        "twitter": { "apikey": "abcdef123456" },
+        "noon": {}
     }
 }
