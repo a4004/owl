@@ -6,9 +6,12 @@ Free and open-source all-in-one Discord management solution with extensive plugi
   <img alt="Alpha" src="https://img.shields.io/static/v1?label=Latest&message=0.1.3&color=blue&style=flat-square"/>
 </p>
 
+## What's New 🆕
+- Take a look at our brand new [📘 Wiki](https://github.com/a4004/owl/wiki) which contains everything you need to know about Owl OSS.
+- New plugin! 🧩 `noon.js` 
+
+## Source Tree
 ```
-Owl OSS - Source Tree
-=====================
 - src 📁
       - cfg 📁
           - appcfg.json ⚙️
