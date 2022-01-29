@@ -21,6 +21,8 @@ Owl OSS - Source Tree
       - plugins 📁
           - noon.js 🧩
           - twttr-relay.js 🧩
+      - scripts 📁
+          - register-slash-cmds-noon.js 💿️
       - index.js 💾
 ```
 
