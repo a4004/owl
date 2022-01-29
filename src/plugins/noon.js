@@ -74,15 +74,17 @@ function init() {
                         } else {
                             if (guild.bucket.server_timeout) {
                                 discordClient.users.fetch(guild.bucket.last_winner).then(async (winner) => {
-                                    await message.reply({ embeds: [replyEmbed(color_negative, 
-                                        ':snail: You were too slow!', 
-                                        `**${winner.username}** got 00:00 before you. Better luck next time.`)]
-                                    });
-                                    setTimeout(() => {
-                                        libowl.condlog('noon'.cyan, 'Clearing timeout for ' + `${guild.gid}`.bgBlack);
-                                        resetTimeout(guild.gid);
-                                    }, 3600000);  
-                                });                 
+                                    if (message.content.includes('00:00') && message.author.id != guild.bucket.last_winner) {
+                                        await message.reply({ embeds: [replyEmbed(color_negative, 
+                                            ':snail: You were too slow!', 
+                                            `**${winner.username}** got 00:00 before you. Better luck next time.`)]
+                                        });
+                                    }
+                                });  
+                                setTimeout(() => {
+                                    libowl.condlog('noon'.cyan, 'Clearing timeout for ' + `${guild.gid}`.bgBlack);
+                                    resetTimeout(guild.gid);
+                                }, 3600000);               
                             } else {
                                 let user = guild.bucket.users.find(u => u.uid == message.author.id);
                                 if (user == undefined) {
@@ -101,7 +103,7 @@ function init() {
                                         history: [current_time.toISOString()]
                                     });
                                 } else {
-                                    if (user.cooldown > 0) {
+                                    if (user.cooldown > 0 && message.content.includes('00:00')) {
                                         await message.reply({ embeds: [replyEmbed(color_negative,
                                             ':x: You\'ve been disqualified!',
                                             `You cannot be awarded because you have a ${user.cooldown} night timeout.`)]
