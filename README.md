@@ -7,8 +7,7 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 </p>
 
 ## What's New 🆕
-- Take a look at our brand new [📘 Wiki](https://github.com/a4004/owl/wiki) which contains everything you need to know about Owl OSS and its plugins.
-- New plugin! 🧩 `noon.js`. Learn more about it [here](https://github.com/a4004/owl/wiki/noon).
+- New script 💿️ `delete-slash-cmds.js` added. Learn more [here](https://github.com/a4004/owl/wiki) for usage.
 
 ## Source Tree
 ```
@@ -25,6 +24,7 @@ Free and open-source all-in-one Discord management solution with extensive plugi
           - noon.js 🧩
           - twttr-relay.js 🧩
       - scripts 📁
+          - delete-slash-cmds.js 💿️
           - register-slash-cmds-noon.js 💿️
       - index.js 💾
 ```
