@@ -7,7 +7,7 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 </p>
 
 ## What's New 🆕
-- New script 💿️ `delete-slash-cmds.js` added. Learn more [here](https://github.com/a4004/owl/wiki) for usage.
+- New script 💿️ `delete-slash-cmds.js` added. You can learn more [here](https://github.com/a4004/owl/wiki#scripts) for details on usage.
 
 ## Source Tree
 ```
