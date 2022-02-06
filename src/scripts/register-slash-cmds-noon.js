@@ -12,6 +12,13 @@ const commands = [
 
 const rest = new REST({ version: '9' }).setToken(appcfg.botToken);
 
+/*
+rest.put(Routes.applicationGuildCommands(appcfg.botClientId, 'xxxxxxxxxxxxxxxx'), { body: commands })
+	.then(() => console.log('Successfully registered application commands.'))
+	.catch(console.error);
+*/
+
 rest.put(Routes.applicationCommands(appcfg.botClientId), { body: commands })
 	.then(() => console.log('Successfully registered application commands.'))
 	.catch(console.error);
+
