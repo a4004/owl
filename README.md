@@ -3,7 +3,7 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 
 <p>
   <img alt="Build Passing" src="https://img.shields.io/static/v1?label=Build&message=Passing&color=limegreen&style=flat-square&logo=node.js&logoColor=white"/>
-  <img alt="Alpha" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4&color=blue&style=flat-square"/>
+  <img alt="Alpha" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4-r2&color=blue&style=flat-square"/>
 </p>
 
 ## What's New 🆕
