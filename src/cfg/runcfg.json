@@ -16,14 +16,7 @@
                         "server_timeout": false,
                         "dispute_lock": false,
                         "last_winner": "",
-                        "users": [
-                            {
-                                "uid": "",
-                                "cooldown": 0,
-                                "balance": 0,
-                                "history": []
-                            }
-                        ]
+                        "users": []
                     }
                 }
             ]
