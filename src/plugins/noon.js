@@ -189,7 +189,7 @@ function init() {
                         break;
                     case 'leaderboard':
                         let results = nooncfg.guilds.find(guild => guild.gid == interaction.guild.id).bucket;
-                        if (results == undefined || results.users.length < 2) {
+                        if (results == undefined || results.users.length < 1) {
                             await interaction.reply({embeds: [replyEmbed(color_interact,
                                 ':mag_right: We couldn\'t find a record for this server.',
                                 'This could be due to an internal error or lack of previous interaction.')]
