@@ -35,6 +35,8 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 3. Modify related configuration files. **Please note you will need to create your own Discord application on the [developer](https://discord.com/developers/) portal in order to obtain your own application token and client ID**.
 4. Start Owl. `ow/src/$ node .`
 
+Consult the [Wiki](https://github.com/a4004/owl/wiki) for additional information.
+
 ## Creating Plugins 🧩
 Owl OSS is in its early stages and does not have much functionality, but it provides the foundation for anyone to create their own functionality on top of the existing
 code. There are no set rules on how you create plugins, but if you're willing to contribute to this OSS project, then ensure it follows a similar structure to the existing
