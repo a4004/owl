@@ -108,7 +108,7 @@ function init() {
                                             ':x: You\'ve been disqualified!',
                                             `You cannot be awarded because you have a ${user.cooldown} night timeout.`)]
                                         });
-                                    } else {
+                                    } else if (message.content.includes('00:00')) {
                                         libowl.condlog('noon'.cyan, 'Setting winner & timeout for ' + `${guild.gid}`.bgBlack);
                                         guild.bucket.server_timeout = true;
                                         guild.bucket.last_winner = message.author.id;
