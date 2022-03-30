@@ -3,11 +3,11 @@ Free and open-source all-in-one Discord management solution with extensive plugi
 
 <p>
   <img alt="Build OK" src="https://img.shields.io/static/v1?label=Build&message=OK&color=limegreen&style=flat-square&logo=node.js&logoColor=white"/>
-  <img alt="Beta" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4-r3&color=blue&style=flat-square"/>
+  <img alt="Beta" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4-r4&color=blue&style=flat-square"/>
 </p>
 
 ## What's New 🆕
-- New script 💿️ `delete-slash-cmds.js` added. You can learn more [here](https://github.com/a4004/owl/wiki#scripts) for details on usage.
+- Fixed time zone conversion issue (discovered thanks to the clocks shifting). Now instead, uses local time of the server the bot is hosted on.
 
 ## Source Tree
 ```
