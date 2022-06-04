@@ -1,9 +1,12 @@
+## ⚠️ Advisory against project deployment ⚠️
+This project has not been maintained for over 2 months and contains dependencies with critical security vulnerabilities. In addition, I now realise the project wasn't designed well and some functionality is buggy or doesn't work outright. I'm planning a full rewrite in TypeScript which will improve maintainability the project as a whole. The date/time when this will actually happen is TBD. In the meantime if you're thinking of using this project please ensure that you update the libraries and forgive me for the spaghetti code. 🙂
+
 # Owl OSS 🌐
 Free and open-source all-in-one Discord management solution with extensive plugin support.
 
 <p>
-  <img alt="Build OK" src="https://img.shields.io/static/v1?label=Build&message=OK&color=limegreen&style=flat-square&logo=node.js&logoColor=white"/>
-  <img alt="Beta" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4-r4&color=blue&style=flat-square"/>
+  <img alt="Build N/A" src="https://img.shields.io/static/v1?label=Build&message=None&color=gray&style=flat-square&logo=node.js&logoColor=white"/>
+  <img alt="Beta" src="https://img.shields.io/static/v1?label=Latest&message=0.1.4-r4&color=red&style=flat-square"/>
 </p>
 
 ## What's New 🆕
