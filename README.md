@@ -1,4 +1,8 @@
-## ⚠️ Advisory against project deployment ⚠️
+## 🚌 This project has moved to [Querty OSS](https://github.com/a4004/querty) 🚌
+This repository is no longer maintained and is out of date, however a more recent and improved version exists under the new name *Querty* at [Querty OSS](https://github.com/a4004/querty). From now on, Owl OSS should be referred to under the new alias, *"Querty OSS"* to avoid confusion with the old, discontinued project.
+
+
+### ⚠️ Advisory against project deployment ⚠️
 This project has not been maintained for over 2 months and contains dependencies with critical security vulnerabilities. In addition, I now realise the project wasn't designed well and some functionality is buggy or doesn't work outright. I'm planning a full rewrite in TypeScript which will improve maintainability the project as a whole. The date/time when this will actually happen is TBD. In the meantime if you're thinking of using this project please ensure that you update the libraries and forgive me for the spaghetti code. 🙂
 
 # Owl OSS 🌐
